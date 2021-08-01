@@ -11,7 +11,7 @@ while opcion != "5":
         op1=""
         while op1 !="11":
             os.system ("cls")
-            men = Menu("Menu Calculadora",  ["1) Suma", "2) Resta", "3) Multiplicacion", "4) Division", "5) Multiplicacion Est", "6) Exponente", "7) Valor Absoluto", "8) Circunferencia", "9) Area Circulo", "10) Area Cuadrado","11) Salir"])
+            men = Menu("Menu Calculadora",  ["1) Suma", "2) Resta", "3) Multiplicacion", "4) Division", "5) Multiplicacion Estandar", "6) Exponente", "7) Valor Absoluto", "8) Circunferencia", "9) Area Circulo", "10) Area Cuadrado","11) Salir"])
             op1 = men.menu()
             os.system ("cls")
             
@@ -56,7 +56,7 @@ while opcion != "5":
                 n1 = int(input("Ingrese el Primer valor: "))
                 n2 = int(input("Ingrese el Segundo valor: "))
                 calest = CalEstandar(n1,n2)
-                print(calest.multiplicacion())
+                print("{} * {} = {}".format(n1,n2,calest.multiplicacion()))
                 input("presione una tecla para continuar")
                 
                 
@@ -65,16 +65,15 @@ while opcion != "5":
                 n1 = int(input("Ingrese el valor de la Base: "))
                 n2 = int(input("Ingrese el valor del Exponente: "))
                 calest = CalEstandar(n1,n2)
-                print(calest.exponente())
+                print("{} ^ {} = {}".format(n1,n2,calest.exponente()))
                 input("presione una tecla para continuar")    
                 
                 
             if op1 == "7":
                 print("Calculadora Estandar --- Valor Absoluto")
                 n1 = int(input("Ingrese el valor de la Base: "))
-                n2 = ""
-                calest = CalEstandar(n1,n2)
-                print(calest.exponente())
+                calest = CalEstandar(n1)
+                print("El valor absoluto es: {}".format(calest.exponente(n1)))
                 input("presione una tecla para continuar")    
                 
             
