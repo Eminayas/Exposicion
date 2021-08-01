@@ -27,10 +27,10 @@ class CalEstandar(Calculadora):
     def multiplicacion(self):
         return self.num1*self.num2 
     
-    def exponente(self):
+    def exponente(num1,num2):
         resultado = 1
-        for i in range (self.num2):
-            resultado *= self.num1
+        for i in range(num2):
+            resultado *= num1
         return resultado
 
     def valorAbsoluto(self):
