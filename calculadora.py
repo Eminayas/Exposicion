@@ -1,6 +1,3 @@
-from _typeshed import Self
-
-
 class Calculadora:
     def __init__(self, numero1, numero2):
         self.num1 = numero1
@@ -63,7 +60,9 @@ class CalCientifica(Calculadora):
         are = self.num1 * self.num2
         return("El area de un cuadrado con los valores ingresados es: {}".format(are))
         
-        
+Cal = Calculadora
+CalEst = CalEstandar
+CalCin = CalCientifica        
 
 
 
