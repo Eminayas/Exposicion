@@ -71,17 +71,16 @@ while opcion != "5":
                 
             if op1 == "7":
                 print("Calculadora Estandar --- Valor Absoluto")
-                n1 = int(input("Ingrese el valor de la Base: "))
-                calest = CalEstandar(n1)
-                print("El valor absoluto es: {}".format(calest.exponente(n1)))
+                n1 = int(input("Ingrese el valor: "))
+                calest = CalEstandar(0,0)
+                print("El valor absoluto es: {}".format(calest.valorAbsoluto(n1)))
                 input("presione una tecla para continuar")    
                 
             
             if op1 == "8":
                 print("Calculadora Ciencitifica --- Circunferencia")
                 n1 = int(input("Ingrese el valor a calcular: "))
-                n2= ""
-                calcie = CalCientifica(n1,n2)
+                calcie = CalCientifica(n1,0)
                 print(calcie.circunferencia())
                 input("presione una tecla para continuar")
                 
@@ -89,8 +88,7 @@ while opcion != "5":
             if op1 == "9":
                 print("Calculadora Cientifica --- Area de un Circulo")
                 n1 = float(input("Ingrese el valor a calcular: "))
-                n2 = ""
-                calcie = CalCientifica(n1,n2)
+                calcie = CalCientifica(n1,0)
                 print(calcie.areaCirculo())
                 input("presione una tecla para continuar")
                 
